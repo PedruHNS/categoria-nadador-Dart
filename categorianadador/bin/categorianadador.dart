@@ -15,5 +15,7 @@ void main(List<String> arguments) {
   final nome = leitura(mensagem: "nome do aluno");
   final idade = int.parse(leitura(mensagem: "idade do aluno"));
 
-  
+   Aluno aluno = Aluno.nomeado(nome: nome, idade: idade);
+
+  aluno.faixaetaria();
 }
